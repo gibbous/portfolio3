@@ -1,41 +1,58 @@
-<!DOCTYPE html>
-  <head>
-    <title>Amanda Hoffman</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  </head>
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Amanda Hoffman</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://bootswatch.com/paper/bootstrap.min.css">
+<link href="http://getbootstrap.com/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+</head>
+<body>
 
-  <body>
-    <div class="header">
-    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" id="logo">Amanda Hoffman</a>
+        </div>
 
-    <div>
-    <h3 class="name">Amanda Hoffman</h3>
-    </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>  <a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+           <li> <a href="contact.html">Contact</a></li>
 
-    <div class="nav">
-     <a href="index.html">About</a> | 
-           <a href="portfolio.html">Portfolio</a> | 
-           <a href="contact.html">Contact</a>
-    </div>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-    <div class="tall container">
-      <div class="section">
-       <h1>Portfolio</h1>
+     <div class="container-fluid">
+  
+      <div class="row">
+        <div class="col-md-8">
+       <h1 class="text-success">Portfolio</h1>
         <hr>
 
-        <table>
+        <table class="table">
 
           <tr>
            <td>
-           <img alt="Lego spaceman" src="assets/image/spaceman.jpg" width="200">
+           <img alt="Lego spaceman" src="assets/images/spaceman.jpg" width="200">
             <div class="project">
               Hangman
             </div>
             </td>
 
             <td>
-            <img alt="Lego dragon" width="200" src="assets/image/dragon.jpg">
+            <img alt="Lego dragon" width="200" src="assets/images/dragon.jpg">
               <div class="project">
                RPG Game
               </div>
@@ -43,13 +60,13 @@
           </tr>
 
           <tr>
-            <td><img alt="cloudy beach" width="200" src="assets/image/beach.jpg">
+            <td><img alt="cloudy beach" width="200" src="assets/images/beach.jpg">
               <div class="project">
               Trivia Game
               </div>
             </td>
 
-            <td><img alt="beach sunrise" width="200" src="assets/image/sunrise.jpg">
+            <td><img alt="beach sunrise" width="200" src="assets/images/sunrise.jpg">
               <div class="project">
               Rutgers Info Widget
               </div>
@@ -57,7 +74,7 @@
           </tr>
 
           <tr>
-            <td><img alt="balloon dart game" width="200" src="assets/image/balloon.jpg">
+            <td><img alt="balloon dart game" width="200" src="assets/images/balloon.jpg">
               <div class="project">
               Rock Paper Scissors
               </div>
@@ -67,19 +84,23 @@
          </tr>
         </table>
       </div>
-        <div class="aside">
-          <h2>Connect with Me</h2>
-          <hr>
-          <img alt="Github icon" src="assets/image/github.jpg" width="40">
-          <img alt="LinkedIn icon" src="assets/image/linkedin.jpg" width="40">
-          <img alt="Stack Overflow icon" src="assets/image/stackoverflow.jpg" width="40">
-        </div>
+         <div class="col-md-4">
+            
+        <h3 class="text-success">Connect with Me</h3>
+        <img src="assets/images/github.jpg" width="64px" class="social" alt="Github">
+        <img src="assets/images/linkedin.jpg" class="social" width="64px" alt="LinkedIn">
+        <img src="assets/images/stackoverflow.jpg" width="64px" class="social" alt="Stack Overflow">
+       </div>
       </div>
-    </div>  
 
-  <footer>
-    <div class="footer">
-    Copyright 2016 Amanda Hoffman
+</div>
+  
+  <footer class="footer">
+  <div class="container">
+
+    
+      <p class="text-muted">&copy; Copyright 2016 Amanda Hoffman</p>
+
     </div>
   </footer>
 </body>
